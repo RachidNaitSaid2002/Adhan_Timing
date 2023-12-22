@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import TemplateDemo from './Nav_bar_compenent/nav';
+import Search from './Search_compenent/search';
+import Result from './Section_compenent/section';
+import Date_c from './date_compenent/date';
+import { useState,useEffect } from 'react';
 
 function App() {
+  const [searchValue, setSearchValue] = useState('');
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 4500);
+    return () => clearTimeout(timer);
+  }, []);
+
+
+  const handleSearch = (value) => {
+    setSearchValue(value);
+};
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {showLoader && <h1 className='loader'></h1>}
+      <TemplateDemo/>
+      <Date_c/>
+      <Search onSearch={handleSearch} />
+      <Result City={searchValue}/>
+    </>
   );
 }
 

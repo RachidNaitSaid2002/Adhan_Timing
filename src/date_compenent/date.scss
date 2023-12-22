@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+.date{
+    width: 98%;
+    background-color: hsl(221, 83%, 55%);
+    margin: 8rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 8px;
+    .day{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 150px;
+        color: #fff;
+        .t_day{
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.currentday{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: -8rem  auto;
+    padding: 18px;
+    border-bottom: 2px solid hsl(221, 83%, 55%);
+    border-right: 2px solid hsl(221, 83%, 55%);
+    border-left: 2px solid hsl(221, 83%, 55%);
+    flex-wrap: wrap;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    span{
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: hsl(221, 83%, 55%);
+        width: 200px;
+        text-align: center;
+    }
+}

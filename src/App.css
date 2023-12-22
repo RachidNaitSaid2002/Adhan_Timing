@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Orbitron&display=swap');
+  .loader{
+    font-size: 48px;
+    color: hsl(221, 83%, 55%);
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .loader:before{
+    content: '';
+    animation: 0.75s print linear alternate infinite;
   }
-  to {
-    transform: rotate(360deg);
+  .loader:after{
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translatey(-45%);
+    width: 2px;
+    height: 1.3em;
+    background: currentColor;
+    opacity: 0.8;
+    animation: 1s blink steps(2) infinite;
   }
-}
+  
+  @keyframes blink {
+    0%  { visibility: hidden;}
+    100%  { visibility: visible;}
+  }
+  @keyframes print {
+    0% { content: 'A'}
+    7% { content: 'Ad'}
+    14% { content: 'Adh'}
+    21% { content: 'Adha'}
+    28% { content: 'Adhan'}
+    35% { content: 'AdhanT'}
+    42% { content: 'AdhanTi'}
+    49% { content: 'AdhanTim'}
+    57% { content: 'AdhanTimi'}
+    64%{ content: 'AdhanTimin'}
+    71%{ content: 'AdhanTiming'}
+    78.%{ content: 'AdhanTiming-'}
+    85%{ content: 'AdhanTiming-4'}
+    92%, 100%{ content: 'AdhanTiming-4U'}
+  }
+

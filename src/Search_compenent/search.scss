@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+.nav_s{
+    margin-top:8rem ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+
+    input{
+        margin-top: 15px;
+        width: 300px;
+        padding: 10px;
+        letter-spacing: 1px;
+        border: 1px solid hsl(224, 76%, 45%);
+        color: hsl(224, 76%, 45%);
+        outline: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        &::placeholder{
+            color: hsl(224, 76%, 45%);
+        }
+    }
+
+    button{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 110px;
+        background-color: hsl(224, 76%, 45%);
+        padding: 5px 10px;
+        font-size: 16px;
+        height: 38px;
+        color: #fff;
+        border: 1px solid hsl(224, 76%, 45%);
+        transition: all 0.2s ease-in;
+        span{
+            font-size: 18px;
+        }
+
+        &:hover{
+            background-color: hsl(0, 0%, 100%);
+            color:hsl(224, 76%, 45%);
+        }
+    }
+}
