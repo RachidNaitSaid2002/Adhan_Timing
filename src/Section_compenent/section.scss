@@ -3,52 +3,52 @@
 
 .result {
     width: 100% !important;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    margin: auto;
 
+    
+    .head_r {
+        background-color: hsl(127, 100%, 13%);
+        color: #fff;
+        margin-bottom: 1rem;
+        padding: 15px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-size: 20px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
 
     .right_content {
-        width: 30%;
-        height: 50vh;
-
-
-        .head_r {
-            background-color: hsl(221, 83%, 55%);
-            color: #fff;
-            margin-bottom: 1rem;
-            padding: 15px;
-            padding-left: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            font-size: 20px;
-            letter-spacing: 1px;
-            width: 100%;
-        }
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin:2rem auto;
 
         .citys {
             margin-bottom: 2rem;
-            width: 100%;
+            width: 400px;
             height: 400px;
-            display: flex;
             align-items: end;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            align-items: center;
+            justify-content:end;
+            flex-direction: column;
 
             img {
                 height: 400px;
                 position: absolute;
                 z-index: -1;
-                width: 30%;
+                width: 400px;
             }
 
             .cont_r {
-                width: 100%;
+                width: 400px;
                 height: 150px;
-                background-color: hsla(221, 83%, 55%, 0.718);
+                background-color: hsla(127, 100%, 13%, 0.715);
 
                 h4 {
                     width: 100%;
@@ -94,13 +94,12 @@
     }
 
     .left_content {
-        width: 60%;
-        height: 50vh;
+       width: 100%;
 
         .next{
-            width: 100%;
-            background-color: hsl(221, 83%, 55%);
-            margin-top: 1rem;
+            width: 80%;
+            background-color: hsl(127, 100%, 13%);
+            margin: 1rem auto 3rem auto !important;
             padding: 10px;
             .tit{
                 font-size: 30px;
@@ -117,18 +116,17 @@
             }
         }
 
-
         .sun {
-            width: 100%;
+            width: 80%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-top: 30px !important;
+            margin: 1rem auto;
 
             .Sunsite {
-                width: 401px;
-                height: 30vh;
+                width: 550px;
+                height: 36vh;
                 display: flex;
                 align-items: end;
                 box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -136,14 +134,13 @@
                 img {
                     position: absolute;
                     z-index: -1;
-                    width: 400px;
-                    height: 30vh;
+                    width: 550px;
+                    height: 36vh;
                 }
 
                 .con {
-                    background-color: hsla(221, 83%, 55%, 0.581);
-                    width: 400px;
-                    height: 10vh;
+                    background-color: hsla(127, 100%, 13%, 0.686);
+                    width: 550px;
                     padding: none;
                     font-size: 20px;
                     letter-spacing: 2px;
@@ -176,7 +173,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px dashed hsl(221, 83%, 55%);
+            border: 2px dashed hsl(127, 100%, 13%);
             padding-top: 20px;
             padding-bottom: 20px;
 
@@ -189,7 +186,7 @@
         }
 
         .head_T {
-            width: 100%;
+            width: 80%;
             display: flex;
             align-items: center;
             justify-content: left;
@@ -197,10 +194,12 @@
             padding-top: 8px;
             padding-bottom: 8px;
             color: #fff;
-            border: hsl(221, 83%, 55%) 1px solid;
+            border: hsl(127, 100%, 13%) 1px solid;
             border-bottom: none;
-            background-color: hsl(221, 83%, 55%);
+            background-color: hsl(127, 100%, 13%);
             box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+            margin: 10px auto 0px;
+
 
             .tout {
                 display: flex;
@@ -216,11 +215,13 @@
             font-weight: normal;
             border: none;
             border-collapse: collapse;
-            width: 100%;
+            width: 80%;
             max-width: 100%;
             white-space: nowrap;
             background-color: white;
-            border: 1px solid hsl(221, 83%, 55%);
+            border: 1px solid hsl(127, 100%, 13%);
+            margin: 0px auto;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
 
         .fl-table td,
@@ -238,13 +239,13 @@
         }
 
         .fl-table thead th {
-            color: hsl(221, 83%, 55%);
+            color: hsl(127, 100%, 13%);
             font-size: 20px;
         }
 
 
         .fl-table thead th:nth-child(odd) {
-            color: hsl(221, 83%, 55%);
+            color: hsl(127, 100%, 13%);
             background: #fff;
         }
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './section.scss';
+import R_Adkar from '../Adkar_compenent/adkar_random';
 
 const Result = ({ City }) => {
   const [content, setContent] = useState([]);
@@ -131,6 +132,10 @@ const Result = ({ City }) => {
 
  console.log(nextPrayer,nextTimer)
 
+ if(nextPrayer == ''){
+  setNextPrayer('Fajr')
+ }
+
   return (
     <div className="result">
       <div className="left_content">
@@ -195,6 +200,7 @@ const Result = ({ City }) => {
             </div>
           </>
         )}
+      <R_Adkar/>
       </div>
       <div className="right_content">
         <div className="head_r">
@@ -317,10 +323,10 @@ const Result = ({ City }) => {
         </div>
 
       </div>
-      <div>
-        {/* <p>Position: {position ? `${position.latitude}, ${position.longitude}` : 'Fetching position...'}</p>
-      <p>City: {city ? city : 'Fetching city...'}</p> */}
-      </div>
+      {/* <div>
+        <p>Position: {position ? `${position.latitude}, ${position.longitude}` : 'Fetching position...'}</p>
+      <p>City: {city ? city : 'Fetching city...'}</p>
+      </div> */}
     </div>
 
   );

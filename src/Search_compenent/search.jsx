@@ -14,7 +14,7 @@ const Search = ({onSearch}) => {
 
     return (
         <>
-            <div className='nav_s card'>
+            {/* <div className='nav_s card'> */}
                 {/* <input
                     type="text"
                     placeholder='Enter Your City Here.....'
@@ -27,7 +27,7 @@ const Search = ({onSearch}) => {
                     </span>
                     Search
                 </button> */}
-            </div>
+            {/* </div> */}
         </>
     );
 };

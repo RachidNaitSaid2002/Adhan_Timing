@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 .date{
-    width: 98%;
-    background-color: hsl(221, 83%, 55%);
-    margin: 8rem auto;
+    width: 80%;
+    background-color: hsl(127, 100%, 13%);
+    margin: 8rem auto 0rem auto;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -20,22 +20,22 @@
 }
 
 .currentday{
-    width: 98%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: -8rem  auto;
+    margin: 0rem  auto 3rem auto;
     padding: 18px;
-    border-bottom: 2px solid hsl(221, 83%, 55%);
-    border-right: 2px solid hsl(221, 83%, 55%);
-    border-left: 2px solid hsl(221, 83%, 55%);
+    border-bottom: 1px solid hsl(127, 100%, 13%);
+    border-right: 1px solid hsl(127, 100%, 13%);
+    border-left: 1px solid hsl(127, 100%, 13%);
     flex-wrap: wrap;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     span{
         letter-spacing: 1px;
         font-size: 18px;
-        color: hsl(221, 83%, 55%);
+        color: hsl(127, 100%, 13%);
         width: 200px;
         text-align: center;
     }
