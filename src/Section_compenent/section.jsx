@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './section.scss';
-import R_Adkar from '../Adkar_compenent/adkar_random';
+import R_Adkar from '../dikr_compenent/adkar_random';
 
 const Result = ({ City }) => {
   const [content, setContent] = useState([]);

@@ -124,9 +124,9 @@ export default function BasicDemo() {
             <li className="Link">
               <Link to="/Adkar" style={{color : "white"}}>Adkar</Link>
             </li>
-            <li className="Link">
+            {/* <li className="Link">
               <Link to="/Quran" style={{color : "white"}}>Quran</Link>
-            </li>
+            </li> */}
             <li className="Link">
               <Link to="/Qibla" style={{color : "white"}}>Qibla</Link>
             </li>
