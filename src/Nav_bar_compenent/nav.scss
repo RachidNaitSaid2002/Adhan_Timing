@@ -8,8 +8,8 @@
    --color-white: hsl(0, 0%, 100%);
 
    --color-blue-100: hsl(217, 91%, 65%);
-   --color-blue-200: hsl(127, 100%, 13%);
-   --color-blue-300: hsl(127, 100%, 13%);
+   --color-blue-200: hsl(0, 0%, 100%);
+   --color-blue-300: hsl(0, 0%, 100%);
 
    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
       0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -53,13 +53,14 @@ main {
    overflow: hidden;
 }
 
-a,
+.Link,
 button {
    cursor: pointer;
    border: none;
    outline: none;
    background: none;
    text-transform: unset;
+   color: white;
 }
 
 img,
@@ -96,6 +97,7 @@ img {
    letter-spacing: -1px;
    text-transform: uppercase;
    color: var(--color-blue-200);
+   cursor: pointer;
 }
 
 // Header
@@ -119,6 +121,7 @@ img {
     text-transform: uppercase;
     color: var(--color-blue-200);
     margin-left: 2%;
+    width: 150px
 
 }
 
@@ -131,6 +134,7 @@ img {
    width: 100%;
    height: 4rem;
    margin: 0 auto;
+   background-color:hsl(127, 100%, 13%) ;
 }
 
 .menu {
@@ -147,6 +151,13 @@ img {
    &.is-active {
       top: 0;
       left: 0;
+      background-color: hsl(127, 100%, 13%);
+      height: 50vh;
+      &:has {
+         .menu_is-active {
+            visibility: hidden;
+         }
+      }
    }
 
    &-inner {
@@ -154,7 +165,9 @@ img {
       flex-direction: column;
       row-gap: 1.25rem;
       margin: 1.25rem;
-      width: 89%;
+      width: 100%;
+
+
    }
 
    &-link {
@@ -181,6 +194,12 @@ img {
       margin-left: auto;
       background: none;
       box-shadow: none;
+      color: hsl(127, 100%, 13%);
+
+      .brand{
+         color: hsl(127, 100%, 13%);
+         font-size: 5%;
+      }
 
       &-inner {
          display: flex;
@@ -196,6 +215,10 @@ img {
 
       &-block {
          margin-left: 2rem;
+      }
+
+      .time{
+         color: hsl(0, 0%, 100%);
       }
    }
 }
@@ -221,12 +244,17 @@ img {
       transform: rotate(0deg);
       border-radius: 1rem;
       background: var(--color-black);
+      color: white;
    }
 
    // Media Query Breakpoint
    @media only screen and (min-width: 48rem) {
       display: none;
       visibility: hidden;
+
+      .brand{
+         font-size: 10px;
+      }
    }
 }
 
@@ -240,7 +268,7 @@ img {
    z-index: 9;
    opacity: 0;
    visibility: hidden;
-   background-color: rgba(0, 0, 0, 0.6);
+   background-color: rgba(0, 0, 0, 0);
    transition: all 0.3s ease-in-out;
 
    &.is-active {
@@ -250,62 +278,4 @@ img {
    }
 }
 
-// Search Bar
-.search {
-   &-toggle,
-   &-cancel {
-      display: block;
-      cursor: pointer;
-      font-size: 1.45rem;
-      line-height: inherit;
-      color: var(--color-black);
-   }
 
-   &-block {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      overflow: hidden;
-      background-color: var(--color-white);
-      transition: all 0.35s ease-in-out;
-
-      &.is-active {
-         top: 0;
-         right: 0;
-      }
-
-      // @media only screen and (min-width:
-   }
-
-   &-form {
-      display: flex;
-      align-items: center;
-      column-gap: 0.75rem;
-      padding: 0.75rem 1rem;
-   }
-
-   &-input {
-      display: block;
-      font-family: inherit;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      width: 100%;
-      height: auto;
-      padding: 0.65rem 1.25rem;
-      border: none;
-      outline: none;
-      border-radius: 0.25rem;
-      color: var(--color-black);
-      background-color: var(--color-light);
-
-      &::-webkit-search-decoration,
-      &::-webkit-search-cancel-button {
-         display: none;
-         visibility: hidden;
-      }
-   }
-}

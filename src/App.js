@@ -3,7 +3,9 @@ import TemplateDemo from './Nav_bar_compenent/nav';
 import Search from './Search_compenent/search';
 import Result from './Section_compenent/section';
 import Date_c from './date_compenent/date';
-import { useState,useEffect } from 'react';
+import Qibla from './Qibla_Compenet/qibla';
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [searchValue, setSearchValue] = useState('');
@@ -16,19 +18,22 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-
   const handleSearch = (value) => {
     setSearchValue(value);
-};
-
+  };
 
   return (
     <>
-      {showLoader && <h1 className='loader'></h1>}
-      <TemplateDemo/>
-      <Date_c/>
-      <Search onSearch={handleSearch} />
-      <Result City={searchValue}/>
+      <Router>
+        {showLoader && <h1 className='loader'></h1>}
+        <TemplateDemo />
+        <Date_c />
+        <Routes>
+          <Route path="/" element={<Result />} />
+          <Route path="/Qibla" element={<Qibla />} />
+          {/* <Route path="/search" element={<Search onSearch={handleSearch} />} /> */}
+        </Routes>
+      </Router>
     </>
   );
 }

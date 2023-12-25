@@ -276,16 +276,14 @@
                 width: 100% !important;
     
                 img {
-                    width: 273px !important;
+                    width: 100% !important;
                     position: absolute !important;
                     z-index: -1;
-                    max-width: 273px !important;
                 }
     
                 .cont_r {
                     width: 100% !important;
                     height: 150px;
-                    background-color: hsla(221, 83%, 55%, 0.718);
     
                     h4 {
                     }
@@ -322,31 +320,40 @@
                 }
             }    
         }
+        
         .left_content{
             width: 100%;
 
-            .Sunsite {
-                width: 100% !important;
-                margin: 15px auto;
-
-                img {
-                    width: 100% !important;
-                }
-
-                .con {
-                    width: 273.5px !important;
-
-
-                    .first {
-                        width: 100%  !important;
-                    }
-
-                    .second {
+            .sun {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin: 1rem auto;
+                .Sunsite {
+                    margin: 15px auto 15px auto !important;
+                    width: 100%;
+                    margin-left: -3rem;
+    
+                    img {
                         width: 100% !important;
                     }
+    
+                    .con {
+                        width: 287px !important;
+    
+                        .first {
+                            width: 100%  !important;
+                        }
+    
+                        .second {
+                            width: 100% !important;
+                        }
+                    }
                 }
+    
             }
-
 
             .not {
                 width: 100%;
@@ -366,14 +373,15 @@
             }
     
             .head_T {
+                width: 100%;
                 .tout {
-                    width: 90%;
+                    width: 100%;
                     font-size: 12px !important;
                 }
             }
     
             .fl-table {
-                width: 90% !important;
+                width: 100% !important;
                 margin: auto;
             }
     

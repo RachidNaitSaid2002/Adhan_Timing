@@ -299,11 +299,11 @@ const Result = ({ City }) => {
           </div>
         </div>
 
-        <div className="citys">
-          <img src="https://i.pinimg.com/564x/0a/43/5d/0a435d788ebd00f8d4f440b6b8e49d07.jpg" alt="jerusalem" />
-          <div className="cont_r">
+        <div className="citys" style={{width : '84%'}}>
+          <img src="https://i.pinimg.com/564x/0a/43/5d/0a435d788ebd00f8d4f440b6b8e49d07.jpg" alt="jerusalem" style={{width : '67.5%'}}/>
+          <div className="cont_r" style={{width : '100% '}}>
             <h4>Jerusalem</h4>
-            <div className="tab">
+            <div className="tab" >
               <div className="t_head">
                 <span>Fajr</span>
                 <span>Dhuhr</span>

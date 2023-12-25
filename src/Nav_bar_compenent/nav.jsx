@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from 'react';
 import './nav.scss';
+import {  Link } from 'react-router-dom';
 
 export default function BasicDemo() {
     
@@ -107,17 +108,28 @@ export default function BasicDemo() {
   return (
     <header className="header" id="header">
       <nav className="navbar container">
-        <a href="./index.html" className="brand">
-          AdanTiming-4U
-        </a>
+        <div className="brand">
+          <Link to='/' style={{color : "white"}}>
+            AdanTiming-4U
+          </Link>
+        </div>
         <div className="burger" id="burger">
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
+          <span className="burger-line" style={{color : "white"}}></span>
+          <span className="burger-line" style={{color : "white"}}></span>
+          <span className="burger-line" style={{color : "white"}}></span>
         </div>
         <span className="overlay"></span>
         <div className="menu" id="menu">
           <ul className="menu-inner">
+            <li className="Link">
+              <Link to="/Adkar" style={{color : "white"}}>Adkar</Link>
+            </li>
+            <li className="Link">
+              <Link to="/Quran" style={{color : "white"}}>Quran</Link>
+            </li>
+            <li className="Link">
+              <Link to="/Qibla" style={{color : "white"}}>Qibla</Link>
+            </li>
             <li className="time">
             {currentTime}
             </li>
